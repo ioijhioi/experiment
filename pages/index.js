@@ -64,6 +64,9 @@ export default function Home() {
           </span>
         </a>
       </footer>
+      <div>
+        first commit
+      </div>
     </div>
   )
 }
