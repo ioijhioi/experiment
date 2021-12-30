@@ -65,7 +65,7 @@ export default function Home() {
         </a>
       </footer>
       <div>
-        first commit
+        first commit!!!
       </div>
     </div>
   )
