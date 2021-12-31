@@ -14,11 +14,11 @@ function MyApp({ Component, pageProps }) {
     <>
     
       {/* {isHiddenMain && <LandingPage/>} */}
-      {!isHiddenMain &&(
+      {/* {!isHiddenMain &&( */}
       <Layout>
         <Component {...pageProps} />
       </Layout> 
-      )}
+      {/* )} */}
     
     </>
   ) 

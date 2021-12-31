@@ -1,8 +1,5 @@
+import Home from '../../src/components/unit/Home/Home.container';
 
 export default function  HomePage ( ) {
-    return (
-        <>
-            <div>홈페이지입니다</div>
-        </>
-    )
+    return <Home/>
 }
