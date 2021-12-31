@@ -13,13 +13,9 @@ export default function NavigationUI( props){
             <MenuItem id="/About" onClick={props.onClickMenu}>
                 About
             </MenuItem>
-            <MenuItem id="/Home" onClick={props.onClickMenu}>
-                Contact
+            <MenuItem id="/UsageWithReactRouter" onClick={props.onClickMenu}>
+                UsageWithReactRouter
             </MenuItem>
-     
-      
-     
-     
         </Wrapper>
     )
  }
