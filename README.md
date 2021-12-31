@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Before Getting Started
+
+리액트와 관련된 라이브러리와 React-dom을 이용해 라우터로 페이지 이동시 애니메이션 효과를 적용시킨 Repositories입니다.
+
 ## Getting Started
 
 First, run the development server:
