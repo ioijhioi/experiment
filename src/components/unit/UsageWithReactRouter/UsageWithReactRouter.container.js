@@ -4,14 +4,17 @@ import { CSSTransition} from 'react-transition-group'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import Music from "../../../../pages/UsageWithReactRouter/Music/index"
 import Movie from "../../../../pages/UsageWithReactRouter/Movie/index"
-import { useEffect } from 'react'
+import "react-quill/dist/quill.snow.css"
+import dynamic from "next/dynamic"
+import PropTypes from 'prop-types'
+import { Component } from 'react'
 
 const routes = [
     { path: '/', name: 'Music', Component: Music},
-    { path: '/Movie', name: 'Movie', Component: Movie},
+    // { path: '../../../../pages/UsageWithReactRouter/Movie', name: 'Movie', Component: Movie},
 ]
 
-function UsageWithReactRouter() {
+window.onload = function UsageWithReactRouter() {
     return (
       <Router>
         <>
@@ -53,13 +56,12 @@ function UsageWithReactRouter() {
     )
   }
   
-  useEffect (() => {
-    const rootElement = document.getElementById('root')
+  UsageWithReactRouter.propTypes = {
+    name: PropTypes.string
 
-    return () => {
-        console.log("페이지이동!")
-    }
-  }, [])
-    
-  ReactDOM.render(<UsageWithReactRouter />, rootElement)
+}
+
+const rootElement = dynamic (() => import(document.getElementById('root')), {ssr: false}) 
+ReactDOM.render(<UsageWithReactRouter />, rootElement)
+
   
