@@ -14,9 +14,10 @@ const routes = [
     // { path: '../../../../pages/UsageWithReactRouter/Movie', name: 'Movie', Component: Movie},
 ]
 
-window.onload = function UsageWithReactRouter() {
+function UsageWithReactRouter() {
+    
     return (
-      <Router>
+      <Router >
         <>
           <Navbar bg="light">
             <Nav className="mx-auto">
@@ -33,7 +34,7 @@ window.onload = function UsageWithReactRouter() {
               ))}
             </Nav>
           </Navbar>
-          <Container className="container">
+          {/* <Container className="container">
             {routes.map(({ path, Component }) => (
               <Route key={path} exact path={path}>
                 {({ match }) => (
@@ -50,18 +51,18 @@ window.onload = function UsageWithReactRouter() {
                 )}
               </Route>
             ))}
-          </Container>
+          </Container> */}
         </>
       </Router>
     )
   }
-  
   UsageWithReactRouter.propTypes = {
     name: PropTypes.string
 
 }
 
 const rootElement = dynamic (() => import(document.getElementById('root')), {ssr: false}) 
+
 ReactDOM.render(<UsageWithReactRouter />, rootElement)
 
   
