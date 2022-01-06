@@ -1,7 +1,19 @@
-import HomePage from "./Home/index"
+// import HomePage from "./Home/index"
 
-export default function LandingPage  (){
-    return (
-        <HomePage/>
-    )
-}
+// export default function LandingPage  (){
+//     return (
+//         <HomePage/>
+//     )
+// }
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./_app"
+
+
+ReactDOM.render(
+  // <React.StrictMode>
+  <App />,
+  // </React.StrictMode>,
+  document.getElementById("root")
+);
